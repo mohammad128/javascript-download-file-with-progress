@@ -1,0 +1,29 @@
+{
+  "name": "downloaderwithprogress",
+  "version": "1.0.0",
+  "description": "Javascript Download File With Progress",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohammad128/javascript-download-file-with-progress.git"
+  },
+  "keywords": [
+    "Javascript",
+    "Download",
+    "Downloader",
+    "Progress",
+    "DownloadWithProgress",
+    "JavascriptDownloader",
+    "JsDownloader",
+    "JsDownloadWithProgress"
+  ],
+  "author": "MohammadJavadi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mohammad128/javascript-download-file-with-progress/issues"
+  },
+  "homepage": "https://github.com/mohammad128/javascript-download-file-with-progress#readme"
+}
