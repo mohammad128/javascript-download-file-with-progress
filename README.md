@@ -1,8 +1,10 @@
 # Javascript Download File With Progress
-#
+
 
 ```javascript
-
+    import Downloader from 'downloader-with-progress';
+    
+    let url = 'http://cachefly.cachefly.net/100mb.test';
     let dl = new Downloader(url);
     dl.onProgress((percent, loaded, total) => {
         console.log('percent: ' + percent, 'loaded: ' + loaded, 'total: ' + total);
