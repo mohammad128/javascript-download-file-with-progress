@@ -1,6 +1,6 @@
 {
   "name": "downloader-with-progress",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Javascript Download File With Progress",
   "main": "index.js",
   "scripts": {
