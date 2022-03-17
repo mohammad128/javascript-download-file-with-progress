@@ -1,7 +1,7 @@
 export default class Downloader  {
     onChangeStateCallback = null;
     onFinishCallback = null;
-    #blobUrl = null;
+    blobUrl = null;
     state = '';
 
     constructor(url) {
@@ -33,8 +33,8 @@ export default class Downloader  {
             document.body.removeChild(link);
             link.remove();
         }
-        if(this.#blobUrl)
-            downloadURI(this.#blobUrl, fileName);
+        if(this.blobUrl)
+            downloadURI(this.blobUrl, fileName);
 
         return this;
     }
@@ -62,9 +62,9 @@ export default class Downloader  {
             if( that.onChangeStateCallback )
                 that.onChangeStateCallback(that.state);
             if(this.readyState === 4 && this.status === 200) {
-                that.#blobUrl = window.URL.createObjectURL(this.response);
+                that.blobUrl = window.URL.createObjectURL(this.response);
                 if(that.onFinishCallback != null) {
-                    that.onFinishCallback(that.#blobUrl);
+                    that.onFinishCallback(that.blobUrl);
                 }
             }
         };
